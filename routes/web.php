@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/threads', 'ThreadsController@index');
+Route::resource('threads', 'ThreadsController');
 
 Auth::routes();
 
